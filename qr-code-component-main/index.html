@@ -12,17 +12,49 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .outerbox{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(214, 226, 240, 1);
+    }
+    .Qrcode-outerbox{
+      height: 450px;
+      width: 300px;
+      background-color: white;
+      display: flex;
+      border: 1px solid white;
+      border-radius: 15px;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin: 10px;
+      padding-top: 20px;
+    }
+    .qrcodeimage{
+      height: 250px;
+      width: 250px;
+    }
+    .Qrcode-text{
+      margin-left: 30px;
+      margin-right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="outerbox">
+    <div class="Qrcode-outerbox">
+      <img src="./images/image-qr-code.png" class="qrcodeimage" style="border-radius: 10px;">
+      <div class="Qrcode-text">
+        <p style="color: rgba(31, 50, 81, 1); font-weight: bold;">Improve your front-end skills by building projects.</p>
+        <p style="color: rgba(123, 135, 157, 1);">Scan the QR Code to visit frontend mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
